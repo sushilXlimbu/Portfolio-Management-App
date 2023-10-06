@@ -1,0 +1,21 @@
+﻿@model Portfoliowebsite.Models.ProgrammingLanguageModel
+
+<form method="post" asp-action="Edit" asp-controller="ProgrammingLanguage">
+
+    <label for="ImageUrl">Programming Language:</label>
+    <input asp-for="ProgrammingLanguageId" hidden/>
+    <input asp-for="User_Id" hidden/>
+    <select asp-for="ImageUrl">
+        <option value="fab fa-html5" selected='@(Model.ImageUrl == "fab fa-html5" ? true : false)'>HTML</option>
+        <option value="fab fa-css3-alt" selected='@(Model.ImageUrl == "fab fa-css3-alt" ? true : false)'>CSS</option>
+        <option value="fab fa-js-square" selected='@(Model.ImageUrl == "fab fa-js-square" ? true : false)'>JavaScript</option>
+        <option value="fab fa-angular" selected='@(Model.ImageUrl == "fab fa-angular" ? true : false)'>Angular</option>
+        <option value="fab fa-react" selected='@(Model.ImageUrl == "fab fa-react" ? true : false)'>React</option>
+        <option value="fab fa-node-js" selected='@(Model.ImageUrl == "fab fa-node-js" ? true : false)'>NodeJs</option>
+        <option value="fab fa-sass" selected='@(Model.ImageUrl == "fab fa-sass" ? true : false)'>Sass</option>
+        <option value="fab fa-less" selected='@(Model.ImageUrl == "fab fa-less" ? true : false)'>Lesss</option>
+        <option value="fab fa-wordpress" selected='@(Model.ImageUrl == "fab fa-wordpress" ? true : false)'>WordPress</option>
+    </select>
+
+    <input type="submit" value="Submit" />
+</form>

@@ -1,0 +1,137 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Portfoliowebsite
+build_property.RootNamespace = Portfoliowebsite
+build_property.ProjectDir = G:\MicroCode Technology\PortfolioMgmtwebsite\Portfoliowebsite\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = G:\MicroCode Technology\PortfolioMgmtwebsite\Portfoliowebsite
+build_property._RazorSourceGeneratorDebug = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/About/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/About/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/AwardAndCertification/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXdhcmRBbmRDZXJ0aWZpY2F0aW9uXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/AwardAndCertification/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXdhcmRBbmRDZXJ0aWZpY2F0aW9uXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/Education/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWR1Y2F0aW9uXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/Education/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWR1Y2F0aW9uXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/Experience/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZXJpZW5jZVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/Experience/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZXJpZW5jZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/ProfilePic/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVBpY1xBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/ProgrammingLanguage/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbW1pbmdMYW5ndWFnZVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/ProgrammingLanguage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbW1pbmdMYW5ndWFnZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/ProgrammingLanguage/Manage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbW1pbmdMYW5ndWFnZVxNYW5hZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/Shared/ErrorPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/Shared/_loginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9sb2dpbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/SocialMedia/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsTWVkaWFcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/SocialMedia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsTWVkaWFcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/SocialMedia/Manage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsTWVkaWFcTWFuYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/Title/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGl0bGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/User/Portfolio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQb3J0Zm9saW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/User/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/WorkFlow/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV29ya0Zsb3dcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/WorkFlow/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV29ya0Zsb3dcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/WorkFlow/Manage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV29ya0Zsb3dcTWFuYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-0bs3sfnh5u

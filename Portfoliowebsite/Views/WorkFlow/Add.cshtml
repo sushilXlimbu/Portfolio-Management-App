@@ -1,0 +1,11 @@
+﻿@model Portfoliowebsite.Models.WorkFLowModel 
+
+
+<form method="post" asp-action="Add" asp-controller="WorkFlow">
+
+    <span asp-validation-for="WorkFlowList" class="text-danger"></span><br />
+    <label>Enter Your Work:</label>
+    <input type="text" asp-for="WorkFlowList" /><br /><br />
+   
+    <input type="submit" value="Submit" />
+</form>

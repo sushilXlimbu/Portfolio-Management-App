@@ -1,0 +1,23 @@
+﻿@model Portfoliowebsite.Models.ExperienceModel
+
+
+<form method="post" asp-action="Add" asp-controller="Experience">
+
+    <span asp-validation-for="Position" class="text-danger"></span><br />
+    <label>Position:</label>
+    <input type="text" asp-for="Position" /><br /><br />
+    <span asp-validation-for="CompanyName" class="text-danger"></span><br />
+    <label>CompanyName:</label>
+    <input type="text" asp-for="CompanyName" /><br /><br />
+    <span asp-validation-for="JobDescription" class="text-danger"></span><br />
+    <label>JobDescription:</label>
+    <input type="text" asp-for="JobDescription" /><br /><br />
+    <span asp-validation-for="StartDate" class="text-danger"></span><br />
+    <label>StartDate:</label>
+    <input type="date" asp-for="StartDate" /><br /><br />
+    <span asp-validation-for="EndDate" class="text-danger"></span><br />
+    <label>EndDate:</label>
+    <input type="date" asp-for="EndDate" /><br /><br />
+
+    <input type="submit" value="Submit" />
+</form>

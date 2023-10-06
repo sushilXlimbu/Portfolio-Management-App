@@ -1,0 +1,26 @@
+﻿@model Portfoliowebsite.Models.EducationModel
+
+
+<form method="post" asp-action="Add" asp-controller="Education">
+    <span asp-validation-for="UniversityName" class="text-danger"></span><br />
+    <label>UniversityName:</label>
+    <input type="text" asp-for="UniversityName" /><br /><br />
+
+    <span asp-validation-for="EducationField" class="text-danger"></span><br />
+    <label>EducationField:</label>
+    <input type="text" asp-for="EducationField" /><br /><br />
+
+    <span asp-validation-for="Gpa" class="text-danger"></span><br />
+    <label>Gpa:</label>
+    <input type="text" asp-for="Gpa" /><br /><br />
+
+    <span asp-validation-for="StartDate" class="text-danger"></span><br />
+    <label>StartDate:</label>
+    <input type="date" asp-for="StartDate" /><br /><br />
+
+    <span asp-validation-for="EndDate" class="text-danger"></span><br />
+    <label>EndDate:</label>
+    <input type="date" asp-for="EndDate" /><br /><br />
+
+    <input type="submit" value="Submit" />
+</form>

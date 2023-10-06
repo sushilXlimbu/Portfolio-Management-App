@@ -1,0 +1,11 @@
+﻿@model Portfoliowebsite.Models.AwardAndCertificationModel
+
+
+<form method="post" asp-action="Add" asp-controller="AwardAndCertification">
+
+    <span asp-validation-for="AwardTitle" class="text-danger"></span><br />
+    <label>Enter Your award and certificaton Title:</label>
+    <input type="text" asp-for="AwardTitle" /><br /><br />
+
+    <input type="submit" value="Submit" />
+</form>

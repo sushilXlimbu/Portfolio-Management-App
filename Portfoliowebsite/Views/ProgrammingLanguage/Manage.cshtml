@@ -1,0 +1,46 @@
+﻿@model List<Portfoliowebsite.Models.ProgrammingLanguageModel>
+
+<html>
+<body>
+    
+    <div class="d-flex justify-content-end">
+        <a type="submit" asp-action="Add" asp-controller="ProgrammingLanguage" style="color: green;">
+            <button class="btn btn-success">Add</button>
+        </a>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Programming Language</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var td in Model)
+            {
+
+                <tr>
+
+                    <td>@td.ImageUrl</td>
+                    <td>
+
+                        
+                        <a type="submit" asp-action="Edit" asp-controller="ProgrammingLanguage" asp-route-id="@td.ProgrammingLanguageId" style="color: black;">
+                            <button class="btn btn-secondary">Edit</button>
+                        </a>
+
+                        <a type="submit" asp-action="Delete" asp-controller="ProgrammingLanguage" asp-route-id="@td.ProgrammingLanguageId" style="color: black;">
+                            <button class="btn btn-danger">Delete</button>
+                        </a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+
+    </table>
+
+</body>
+
+</html>

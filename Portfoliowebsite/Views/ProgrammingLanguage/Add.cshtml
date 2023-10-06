@@ -1,0 +1,19 @@
+﻿@model Portfoliowebsite.Models.ProgrammingLanguageModel
+
+<form method="post" asp-action="Add" asp-controller="ProgrammingLanguage">
+    <label class="text-danger">@ViewBag.Exist</label>
+    <label for="ImageUrl">Select Social Media:</label>
+    <select asp-for="ImageUrl">
+        <option value="fab fa-html5">HTML</option>
+        <option value="fab fa-css3-alt">CSS</option>
+        <option value="fab fa-js-square">JavaScript</option>
+        <option value="fab fa-angular">Angular</option>
+        <option value="fab fa-react">React</option>
+        <option value="fab fa-node-js">NodeJs</option>
+        <option value="fab fa-sass">Sass</option>
+        <option value="fab fa-less">Lesss</option>
+        <option value="fab fa-wordpress">WordPress</option>
+    </select>
+
+    <input type="submit" value="Submit" />
+</form>

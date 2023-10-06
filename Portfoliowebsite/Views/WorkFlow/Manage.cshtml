@@ -1,0 +1,46 @@
+﻿@model List<Portfoliowebsite.Models.WorkFLowModel>
+
+<html>
+<body>
+
+    <div class="d-flex justify-content-end">
+        <a type="submit" asp-action="Add" asp-controller="WorkFlow" >
+            <button class="btn btn-success">Add</button>
+        </a>
+    </div>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>WorkFlow</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var td in Model)
+            {
+                <tr>
+
+                    <td>@td.WorkFlowList</td>
+                    <td>
+
+                        
+                        <a type="submit" asp-action="Edit" asp-controller="WorkFlow" asp-route-id="@td.WorkflowId" style="color: black;">
+                            <button class="btn btn-secondary">Edit</button>
+                        </a>
+
+                        <a type="submit" asp-action="Delete" asp-controller="WorkFlow" asp-route-id="@td.WorkflowId" style="color: black;">
+                            <button class="btn btn-danger">Delete</button>
+                        </a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+
+    </table>
+
+</body>
+
+</html>

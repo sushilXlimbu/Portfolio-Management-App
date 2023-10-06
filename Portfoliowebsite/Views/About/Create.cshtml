@@ -1,0 +1,34 @@
+﻿@model Portfoliowebsite.Models.AboutModel
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h3 class="text-bg-danger">@ViewBag.AboutError</h3>
+<form method="post" asp-action="Create" asp-controller="About" enctype="multipart/form-data">
+
+    <label for="ProfilePicture">Profile Picture:</label>
+    <input type="file" name="Profilepic" asp-for="ProfilePicture" class="form-control-file" />
+
+    <span asp-validation-for="FName"></span>
+    <label>First Name:</label>
+    <input type="text" asp-for="FName" /><br /><br />
+    <span asp-validation-for="LName"></span>
+    <label>Last Name:</label>
+    <input type="text" asp-for="LName" /><br /><br />
+    <span asp-validation-for="Address"></span>
+    <label>Address:</label>
+    <input type="text" asp-for="Address" /><br /><br />
+    <span asp-validation-for="PhoneNumber"></span>
+    <label>PhoneNumber:</label>
+    <input type="text" asp-for="PhoneNumber" /><br /><br />
+    <span asp-validation-for="ProfileEmail"></span>
+    <label>Email:</label>
+    <input type="email" asp-for="ProfileEmail" /><br /><br />
+    <span asp-validation-for="ProfileDescription"></span>
+    <label>Description:</label>
+    <input type="text" asp-for="ProfileDescription" /><br /><br />
+
+    <input type="submit" value="Submit" />
+</form>

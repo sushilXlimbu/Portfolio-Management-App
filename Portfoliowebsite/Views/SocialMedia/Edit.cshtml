@@ -1,0 +1,19 @@
+﻿@model Portfoliowebsite.Models.SocialMediaModel
+
+
+<form method="post" asp-action="Edit" asp-controller="SocialMedia">
+
+    <label for="ImageUrl">Select Social Media:</label>
+    <input asp-for="SocialMediaId" hidden />
+    <input asp-for="User_Id" hidden />
+    <select asp-for="ImageUrl">       
+        <option value="fab fa-facebook-f" selected='@(Model.ImageUrl == "fab fa-facebook-f" ? true : false)'>Facebook</option>
+        <option value="fab fa-twitter" selected='@(Model.ImageUrl == "fab fa-twitter" ? true : false)'>Twitter</option>
+        <option value="fab fa-linkedin-in" selected='@(Model.ImageUrl == "fab fa-linkedin-in" ? true : false)'>LinkedIn</option>
+        <option value="fab fa-github" selected='@(Model.ImageUrl == "fab fa-github" ? true : false)'>GitHub</option>
+    </select>
+    <span asp-validation-for="SocialMediaLink" class="text-danger"></span><br />
+    <label asp-for="SocialMediaLink">Profile Link:</label>
+    <input type="text" asp-for="SocialMediaLink" /><br /><br />
+    <input type="submit" value="Submit" />
+</form>

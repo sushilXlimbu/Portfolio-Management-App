@@ -1,0 +1,315 @@
+﻿@model Portfoliowebsite.Models.ViewModels.ViewModel
+
+@{
+    Layout = "~/Views/Shared/_loginLayout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Resume - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="~/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="~/css/styles.css" rel="stylesheet" />
+
+
+
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Clarence Taylor</span>
+            @if(Model.AboutModel == null)
+            {
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="" alt="..." /></span>
+
+            }
+            else
+            {
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="@Model.AboutModel.ProfilePicture" alt="..." /></span>
+
+            }
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience @Model.TitleModel. </a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                @* <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>*@
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+
+        <!-- About-->
+        
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                @if (Model.AboutModel == null)
+                {
+
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex">
+                            <h1 class="mb-0">
+                                <span class="text-primary"></span>
+                            </h1><a class="ms-2" asp-controller="About" asp-action="Edit"><i class="fa-regular fa-pen-to-square"></i></a>
+                        </div>
+                        <div>
+                            <a asp-action="Create" asp-controller="About"><button class="btn-success">+ AddAboutSection</button></a>
+                        </div>
+                    </div>
+
+                    
+
+                }
+                else
+                {
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex">
+                            <h1 class="mb-0">
+                                @Model.AboutModel.FName
+                                <span class="text-primary">@Model.AboutModel.LName</span>
+                            </h1><a class="ms-2" asp-controller="About" asp-action="Edit"><i class="fa-regular fa-pen-to-square"></i></a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="subheading mb-5">
+                        @Model.AboutModel.Address · @Model.AboutModel.PhoneNumber ·
+                        <a href="mailto:name@email.com">@Model.AboutModel.ProfileEmail</a>
+                    </div>
+                    <p class="lead mb-5">@Model.AboutModel.ProfileDescription</p>
+
+                }
+                @if(Model.SocialMediaModels == null)
+                {
+                    <div class="social-icons">
+                            <a class="social-icon bg-success" asp-action="Manage" asp-controller="SocialMedia">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </a>
+
+                        @*<a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
+                    <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>*@
+                    </div>
+                }
+                else
+                {
+                    <div class="social-icons">
+                        @foreach (var social in Model.SocialMediaModels)
+                        {
+                            <a class="social-icon" href="@social.SocialMediaLink"><i class="@social.ImageUrl"></i></a>
+                        }
+                        <a class="social-icon bg-success" asp-action="Manage" asp-controller="SocialMedia">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </a>
+
+                        @*<a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
+                    <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>*@
+                    </div>
+                }
+
+                
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Experience-->
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                        <h2 class="mb-5">Experience</h2>
+                        <a class="ms-2" asp-controller="Title" asp-action="Edit"><i class="fa-regular fa-pen-to-square"></i></a>
+                    </div>
+                    <div>
+                        <a asp-action="Add" asp-controller="Experience"><button class="btn-success">+ AddExperience</button></a>
+                    </div>
+                </div>
+
+                @if(Model.ExperienceModel == null)
+                {
+                    
+                }
+                else
+                {
+
+                    @foreach (var experience in Model.ExperienceModel)
+                    {
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                            <div class="flex-grow-1">
+                                <div class="d-flex ">
+                                    <h3 class="mb-0">@experience.Position</h3>
+                                    <a class="ms-2" asp-controller="Experience" asp-action="Edit" asp-route-id="@experience.ExperienceId"><i class="fa-regular fa-pen-to-square"></i></a>
+                                </div>
+                                <div class="subheading mb-3">@experience.CompanyName</div>
+                                <p>@experience.JobDescription</p>
+                            </div>
+                            <div class="flex-shrink-0"><span class="text-primary">@experience.startDateonly - @experience.endDateonly</span></div>
+                        </div>
+                    }
+                }
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                        <h2 class="mb-5">Education</h2>
+
+                        <a class="ms-2" asp-controller="" asp-action=""><i class="fa-regular fa-pen-to-square"></i></a>
+                    </div>
+                    <div>
+                        <a asp-action="Add" asp-controller="Education"><button class="btn-success">+ AddEducation</button></a>
+                    </div>
+                </div>
+                @if(Model.EducationModel == null)
+                {
+                    
+                }
+                else
+                {
+                    @foreach (var edu in Model.EducationModel)
+                    {
+                        <div class="d-flex flex-column flex-md-row justify-content-between">
+                            <div class="flex-grow-1">
+                                <div class="d-flex ">
+                                    <h3 class="mb-0">@edu.UniversityName</h3><a class="ms-2" asp-controller="Education" asp-action="Edit" asp-route-id="@edu.EducationId"><i class="fa-regular fa-pen-to-square"></i></a>
+                                </div>
+                                <div class="subheading mb-3">@edu.EducationField</div>
+                                <p>GPA: @edu.Gpa</p>
+                            </div>
+                            <div class="flex-shrink-0"><span class="text-primary">@edu.startDateonly - @edu.endDateonly</span></div>
+                        </div>
+                    }
+                }
+                
+
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Skills-->
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <div class="d-flex">
+                    <h2 class="mb-5">Skills</h2>
+
+                    <a class="ms-2" asp-controller="" asp-action=""><i class="fa-regular fa-pen-to-square"></i></a>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                        <div class="subheading mb-3">Programming Languages & Tools</div>
+                        <a class="ms-2" asp-controller="ProgrammingLanguage" asp-action="Manage"><i class="fa-regular fa-pen-to-square"></i></a>
+                    </div>
+                    <div>
+                        <a asp-action="Add" asp-controller="ProgrammingLanguage"><button class="btn-success">+ AddProgrammingLanguage</button></a>
+                    </div>
+                </div>
+
+                @if(Model.ProgrammingLanguageModel == null)
+                {
+                    
+
+                }
+                else
+                {
+
+                    <ul class="list-inline dev-icons">
+                        @foreach (var language in Model.ProgrammingLanguageModel)
+                        {
+                            <li class="list-inline-item">
+                                <i class="@language.ImageUrl"></i>
+                            </li>
+                        }
+                    </ul>
+                }
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                        <div class="subheading mb-3">Workflow</div>
+                        <a class="ms-2" asp-controller="WorkFlow" asp-action="Manage"><i class="fa-regular fa-pen-to-square"></i></a>
+                    </div>
+                    <div>
+                        <a asp-action="Add" asp-controller="WorkFLow"><button class="btn-success">+ AddWorkFlow</button></a>
+                    </div>
+                </div>
+
+                @if(Model.WorkFLowModel == null)
+                {
+                    
+                }
+                else
+                {
+                    <ul class="fa-ul mb-0">
+                        @foreach (var work in Model.WorkFLowModel)
+                        {
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                @work.WorkFlowList
+                            </li>
+                        }
+                    </ul>
+                }
+                
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Awards-->
+        <section class="resume-section" id="awards">
+            <div class="resume-section-content">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                        <h2 class="mb-5">Awards & Certifications</h2>
+
+                        <a class="ms-2" asp-controller="" asp-action=""><i class="fa-regular fa-pen-to-square"></i></a>
+                    </div>
+                    <div>
+                        <a asp-action="Add" asp-controller="AwardAndCertification"><button class="btn-success">+ AddAwardAndCertification</button></a>
+                    </div>
+                </div>
+                @if(Model.AwardAndCertificationModel == null)
+                {
+                    
+                }
+                else
+                {
+                    <ul class="fa-ul mb-0">
+                        @foreach (var award in Model.AwardAndCertificationModel)
+                        {
+                            <li>
+                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                                @award.AwardTitle
+                                <a class="ms-2" asp-controller="AwardAndCertification" asp-action="Edit" asp-route-id="@award.AwardAndCertification"><i class="fa-regular fa-pen-to-square"></i></a>
+
+                            </li>
+                        }
+                    </ul>
+                }
+               
+            </div>
+        </section>
+
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="~/js/scripts.js"></script>
+</body>
+</html>

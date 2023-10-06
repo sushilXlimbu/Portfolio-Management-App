@@ -1,0 +1,349 @@
+{
+  "Files": [
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Portfoliowebsite.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Portfoliowebsite.bundle.scp.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\04fb960a-78ab-493a-8502-0f7fa1011e0162351078_609999406163613_2966377733451415552_n.jpg",
+      "PackagePath": "staticwebassets\\img\\04fb960a-78ab-493a-8502-0f7fa1011e0162351078_609999406163613_2966377733451415552_n.jpg"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\063bda34-02c2-4c65-b9bc-cdf7c3bea14bDSC_1602.JPG",
+      "PackagePath": "staticwebassets\\img\\063bda34-02c2-4c65-b9bc-cdf7c3bea14bDSC_1602.JPG"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\16dd4a74-f63c-4613-ad16-565ed602719c62351078_609999406163613_2966377733451415552_n.jpg",
+      "PackagePath": "staticwebassets\\img\\16dd4a74-f63c-4613-ad16-565ed602719c62351078_609999406163613_2966377733451415552_n.jpg"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\2fc814f0-d7f7-4903-b680-263b3d1cf18d315470665_1035980320589772_3331948392196083976_n.jpg",
+      "PackagePath": "staticwebassets\\img\\2fc814f0-d7f7-4903-b680-263b3d1cf18d315470665_1035980320589772_3331948392196083976_n.jpg"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\351a5aa6-f047-47ca-8783-6302e35441f4CheechM.jpg",
+      "PackagePath": "staticwebassets\\img\\351a5aa6-f047-47ca-8783-6302e35441f4CheechM.jpg"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\3a8246bf-17ea-4f0e-ad56-172dfb72ab81wallp.jpg",
+      "PackagePath": "staticwebassets\\img\\3a8246bf-17ea-4f0e-ad56-172dfb72ab81wallp.jpg"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\497f36c7-d50e-4c27-bd0d-004a1ac5c4d63401079.jpg",
+      "PackagePath": "staticwebassets\\img\\497f36c7-d50e-4c27-bd0d-004a1ac5c4d63401079.jpg"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\4cc0bcbf-9aea-4eda-b12d-6d7dafd0b9fc62351078_609999406163613_2966377733451415552_n.jpg",
+      "PackagePath": "staticwebassets\\img\\4cc0bcbf-9aea-4eda-b12d-6d7dafd0b9fc62351078_609999406163613_2966377733451415552_n.jpg"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\67080461-ff5b-4f34-b92c-41dc92f9c42acute.jpg",
+      "PackagePath": "staticwebassets\\img\\67080461-ff5b-4f34-b92c-41dc92f9c42acute.jpg"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\890968fe-b04c-4f1b-8a6a-88d6772eb34662351078_609999406163613_2966377733451415552_n.jpg",
+      "PackagePath": "staticwebassets\\img\\890968fe-b04c-4f1b-8a6a-88d6772eb34662351078_609999406163613_2966377733451415552_n.jpg"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\Cheech.jpg",
+      "PackagePath": "staticwebassets\\img\\Cheech.jpg"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\ab78b61c-8c3f-4b75-95d9-83ecacc72c57farhan.jpg",
+      "PackagePath": "staticwebassets\\img\\ab78b61c-8c3f-4b75-95d9-83ecacc72c57farhan.jpg"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\b8b9ac2c-25a5-4ca1-a676-01dda23fc18b62351078_609999406163613_2966377733451415552_n.jpg",
+      "PackagePath": "staticwebassets\\img\\b8b9ac2c-25a5-4ca1-a676-01dda23fc18b62351078_609999406163613_2966377733451415552_n.jpg"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\c1e051df-d18b-4a74-9e2f-42ae099c7b55Angel.png",
+      "PackagePath": "staticwebassets\\img\\c1e051df-d18b-4a74-9e2f-42ae099c7b55Angel.png"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\d00a7da0-d924-4e6e-a283-ab9bfac8c53762351078_609999406163613_2966377733451415552_n.jpg",
+      "PackagePath": "staticwebassets\\img\\d00a7da0-d924-4e6e-a283-ab9bfac8c53762351078_609999406163613_2966377733451415552_n.jpg"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\e03d5470-bbb8-465b-9427-c059d65ca152ID.jpg",
+      "PackagePath": "staticwebassets\\img\\e03d5470-bbb8-465b-9427-c059d65ca152ID.jpg"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\favicon.ico",
+      "PackagePath": "staticwebassets\\img\\favicon.ico"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\fdb3f7ba-68b4-4a9c-935a-e9e40b7b348amilan.jpg",
+      "PackagePath": "staticwebassets\\img\\fdb3f7ba-68b4-4a9c-935a-e9e40b7b348amilan.jpg"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\img\\profile.jpg",
+      "PackagePath": "staticwebassets\\img\\profile.jpg"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\js\\scripts.js"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "G:\\MicroCode Technology\\PortfolioMgmtwebsite\\Portfoliowebsite\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Portfoliowebsite.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Portfoliowebsite.props",
+      "PackagePath": "build\\Portfoliowebsite.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Portfoliowebsite.props",
+      "PackagePath": "buildMultiTargeting\\Portfoliowebsite.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Portfoliowebsite.props",
+      "PackagePath": "buildTransitive\\Portfoliowebsite.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
