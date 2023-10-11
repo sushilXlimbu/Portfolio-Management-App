@@ -24,7 +24,7 @@ namespace Portfoliowebsite.Migrations
 
             modelBuilder.Entity("Portfoliowebsite.Models.AboutModel", b =>
                 {
-                    b.Property<Guid>("Aboutid")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -53,13 +53,12 @@ namespace Portfoliowebsite.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProfilePicture")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("User_Id")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("Aboutid");
+                    b.HasKey("Id");
 
                     b.HasIndex("User_Id")
                         .IsUnique();
@@ -69,7 +68,7 @@ namespace Portfoliowebsite.Migrations
 
             modelBuilder.Entity("Portfoliowebsite.Models.AwardAndCertificationModel", b =>
                 {
-                    b.Property<Guid>("AwardAndCertification")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -80,7 +79,7 @@ namespace Portfoliowebsite.Migrations
                     b.Property<Guid>("User_Id")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("AwardAndCertification");
+                    b.HasKey("Id");
 
                     b.HasIndex("User_Id");
 
@@ -89,7 +88,7 @@ namespace Portfoliowebsite.Migrations
 
             modelBuilder.Entity("Portfoliowebsite.Models.EducationModel", b =>
                 {
-                    b.Property<Guid>("EducationId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -119,7 +118,7 @@ namespace Portfoliowebsite.Migrations
                     b.Property<string>("startDateonly")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("EducationId");
+                    b.HasKey("Id");
 
                     b.HasIndex("User_Id");
 
@@ -128,7 +127,7 @@ namespace Portfoliowebsite.Migrations
 
             modelBuilder.Entity("Portfoliowebsite.Models.ExperienceModel", b =>
                 {
-                    b.Property<Guid>("ExperienceId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -159,7 +158,7 @@ namespace Portfoliowebsite.Migrations
                     b.Property<string>("startDateonly")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ExperienceId");
+                    b.HasKey("Id");
 
                     b.HasIndex("User_Id");
 
@@ -189,7 +188,7 @@ namespace Portfoliowebsite.Migrations
 
             modelBuilder.Entity("Portfoliowebsite.Models.ProgrammingLanguageModel", b =>
                 {
-                    b.Property<Guid>("ProgrammingLanguageId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -200,7 +199,7 @@ namespace Portfoliowebsite.Migrations
                     b.Property<Guid>("User_Id")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("ProgrammingLanguageId");
+                    b.HasKey("Id");
 
                     b.HasIndex("User_Id");
 
@@ -209,7 +208,7 @@ namespace Portfoliowebsite.Migrations
 
             modelBuilder.Entity("Portfoliowebsite.Models.SocialMediaModel", b =>
                 {
-                    b.Property<Guid>("SocialMediaId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -224,7 +223,7 @@ namespace Portfoliowebsite.Migrations
                     b.Property<Guid>("User_Id")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("SocialMediaId");
+                    b.HasKey("Id");
 
                     b.HasIndex("User_Id");
 
@@ -293,7 +292,7 @@ namespace Portfoliowebsite.Migrations
 
             modelBuilder.Entity("Portfoliowebsite.Models.WorkFLowModel", b =>
                 {
-                    b.Property<Guid>("WorkflowId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -304,7 +303,7 @@ namespace Portfoliowebsite.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("WorkflowId");
+                    b.HasKey("Id");
 
                     b.HasIndex("User_Id");
 

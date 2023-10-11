@@ -21,5 +21,9 @@ namespace Portfoliowebsite.Data
         public DbSet<SocialMediaModel> SocialMedia { get; set; }
         public DbSet<TitleModel> Titles { get; set; }
 
+        internal object SetAsync<T>()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

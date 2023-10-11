@@ -3,13 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Portfoliowebsite.Models
 {
-    public class EducationModel
+    public class EducationModel : BaseModel
     {
-        [Key]
-        public Guid EducationId { get; set; }
-        public Guid User_Id { get; set; }
-        [ForeignKey("User_Id")]
-        public User? Users { get; set; }
         [Required]
         public string UniversityName { get; set; }
         [Required]

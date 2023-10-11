@@ -1,7 +1,7 @@
 ﻿@model Portfoliowebsite.Models.EducationModel
 
 <form method="post" asp-controller="Education" asp-action="Edit">
-    <input type="hidden" asp-for="EducationId" />
+    <input type="hidden" asp-for="Id" />
     <input type="hidden" asp-for="User_Id" />
     <span asp-validation-for="UniversityName" class="text-danger"></span><br />
     <label>UniversityName:</label>

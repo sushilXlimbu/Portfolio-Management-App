@@ -12,8 +12,8 @@ using Portfoliowebsite.Data;
 namespace Portfoliowebsite.Migrations
 {
     [DbContext(typeof(PortfolioDbContext))]
-    [Migration("20231003063304_experience table update")]
-    partial class experiencetableupdate
+    [Migration("20231009095348_New Database Initial Migration")]
+    partial class NewDatabaseInitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,7 +27,7 @@ namespace Portfoliowebsite.Migrations
 
             modelBuilder.Entity("Portfoliowebsite.Models.AboutModel", b =>
                 {
-                    b.Property<Guid>("Aboutid")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -55,10 +55,13 @@ namespace Portfoliowebsite.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ProfilePicture")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<Guid>("User_Id")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("Aboutid");
+                    b.HasKey("Id");
 
                     b.HasIndex("User_Id")
                         .IsUnique();
@@ -68,7 +71,7 @@ namespace Portfoliowebsite.Migrations
 
             modelBuilder.Entity("Portfoliowebsite.Models.AwardAndCertificationModel", b =>
                 {
-                    b.Property<Guid>("AwardAndCertification")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -79,7 +82,7 @@ namespace Portfoliowebsite.Migrations
                     b.Property<Guid>("User_Id")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("AwardAndCertification");
+                    b.HasKey("Id");
 
                     b.HasIndex("User_Id");
 
@@ -88,7 +91,7 @@ namespace Portfoliowebsite.Migrations
 
             modelBuilder.Entity("Portfoliowebsite.Models.EducationModel", b =>
                 {
-                    b.Property<Guid>("EducationId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -118,7 +121,7 @@ namespace Portfoliowebsite.Migrations
                     b.Property<string>("startDateonly")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("EducationId");
+                    b.HasKey("Id");
 
                     b.HasIndex("User_Id");
 
@@ -127,7 +130,7 @@ namespace Portfoliowebsite.Migrations
 
             modelBuilder.Entity("Portfoliowebsite.Models.ExperienceModel", b =>
                 {
-                    b.Property<Guid>("ExperienceId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -158,7 +161,7 @@ namespace Portfoliowebsite.Migrations
                     b.Property<string>("startDateonly")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ExperienceId");
+                    b.HasKey("Id");
 
                     b.HasIndex("User_Id");
 
@@ -186,31 +189,9 @@ namespace Portfoliowebsite.Migrations
                     b.ToTable("Intrests");
                 });
 
-            modelBuilder.Entity("Portfoliowebsite.Models.ProfilePic", b =>
-                {
-                    b.Property<int>("PictureId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PictureId"));
-
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("User_Id")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("PictureId");
-
-                    b.HasIndex("User_Id");
-
-                    b.ToTable("ProfileImage");
-                });
-
             modelBuilder.Entity("Portfoliowebsite.Models.ProgrammingLanguageModel", b =>
                 {
-                    b.Property<Guid>("ProgrammingLanguageId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -221,7 +202,7 @@ namespace Portfoliowebsite.Migrations
                     b.Property<Guid>("User_Id")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("ProgrammingLanguageId");
+                    b.HasKey("Id");
 
                     b.HasIndex("User_Id");
 
@@ -230,7 +211,7 @@ namespace Portfoliowebsite.Migrations
 
             modelBuilder.Entity("Portfoliowebsite.Models.SocialMediaModel", b =>
                 {
-                    b.Property<Guid>("SocialMediaId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -245,7 +226,7 @@ namespace Portfoliowebsite.Migrations
                     b.Property<Guid>("User_Id")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("SocialMediaId");
+                    b.HasKey("Id");
 
                     b.HasIndex("User_Id");
 
@@ -314,7 +295,7 @@ namespace Portfoliowebsite.Migrations
 
             modelBuilder.Entity("Portfoliowebsite.Models.WorkFLowModel", b =>
                 {
-                    b.Property<Guid>("WorkflowId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -325,7 +306,7 @@ namespace Portfoliowebsite.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("WorkflowId");
+                    b.HasKey("Id");
 
                     b.HasIndex("User_Id");
 
@@ -381,17 +362,6 @@ namespace Portfoliowebsite.Migrations
                     b.HasOne("Portfoliowebsite.Models.User", "Users")
                         .WithOne("Intrest")
                         .HasForeignKey("Portfoliowebsite.Models.IntrestModel", "User_Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Users");
-                });
-
-            modelBuilder.Entity("Portfoliowebsite.Models.ProfilePic", b =>
-                {
-                    b.HasOne("Portfoliowebsite.Models.User", "Users")
-                        .WithMany()
-                        .HasForeignKey("User_Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

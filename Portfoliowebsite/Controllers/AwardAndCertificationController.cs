@@ -35,7 +35,7 @@ namespace Portfoliowebsite.Controllers
         [HttpGet,Authorize]
         public IActionResult Edit(Guid id ) 
         {
-            var selectedCertificate = _dbContext.AwardAndCertifications.FirstOrDefault(x => x.AwardAndCertification == id);
+            var selectedCertificate = _dbContext.AwardAndCertifications.FirstOrDefault(x => x.Id == id);
 
             return View(selectedCertificate); 
         }

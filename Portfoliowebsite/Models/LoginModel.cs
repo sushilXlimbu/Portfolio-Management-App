@@ -2,7 +2,7 @@
 
 namespace Portfoliowebsite.Models
 {
-    public class LoginModel
+    public class LoginModel : BaseModel
     {
         public Guid? User_Id { get; set; }
 

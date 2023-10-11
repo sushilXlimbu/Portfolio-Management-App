@@ -4,7 +4,7 @@
 <form method="post" asp-action="Edit" asp-controller="SocialMedia">
 
     <label for="ImageUrl">Select Social Media:</label>
-    <input asp-for="SocialMediaId" hidden />
+    <input asp-for="Id" hidden />
     <input asp-for="User_Id" hidden />
     <select asp-for="ImageUrl">       
         <option value="fab fa-facebook-f" selected='@(Model.ImageUrl == "fab fa-facebook-f" ? true : false)'>Facebook</option>

@@ -16,8 +16,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = G:\MicroCode Technology\PortfolioMgmtwebsite\Portfoliowebsite
 build_property._RazorSourceGeneratorDebug = 
 
-[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/About/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcQ3JlYXRlLmNzaHRtbA==
+[G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/About/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [G:/MicroCode Technology/PortfolioMgmtwebsite/Portfoliowebsite/Views/About/Edit.cshtml]

@@ -3,7 +3,7 @@
 <form method="post" asp-action="Edit" asp-controller="ProgrammingLanguage">
 
     <label for="ImageUrl">Programming Language:</label>
-    <input asp-for="ProgrammingLanguageId" hidden/>
+    <input asp-for="Id" hidden/>
     <input asp-for="User_Id" hidden/>
     <select asp-for="ImageUrl">
         <option value="fab fa-html5" selected='@(Model.ImageUrl == "fab fa-html5" ? true : false)'>HTML</option>

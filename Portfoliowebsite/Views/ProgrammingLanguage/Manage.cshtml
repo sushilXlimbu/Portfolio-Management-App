@@ -8,6 +8,7 @@
             <button class="btn btn-success">Add</button>
         </a>
     </div>
+    <label class="text-danger">@TempData["deleteError"]</label>
     <table class="table">
         <thead>
             <tr>
@@ -25,11 +26,11 @@
                     <td>
 
                         
-                        <a type="submit" asp-action="Edit" asp-controller="ProgrammingLanguage" asp-route-id="@td.ProgrammingLanguageId" style="color: black;">
+                        <a type="submit" asp-action="Edit" asp-controller="ProgrammingLanguage" asp-route-id="@td.Id" style="color: black;">
                             <button class="btn btn-secondary">Edit</button>
                         </a>
 
-                        <a type="submit" asp-action="Delete" asp-controller="ProgrammingLanguage" asp-route-id="@td.ProgrammingLanguageId" style="color: black;">
+                        <a type="submit" asp-action="Delete" asp-controller="ProgrammingLanguage" asp-route-id="@td.Id" style="color: black;">
                             <button class="btn btn-danger">Delete</button>
                         </a>
 

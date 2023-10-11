@@ -1,8 +1,9 @@
 ﻿@model Portfoliowebsite.Models.AwardAndCertificationModel
 
 
-<form method="post" asp-action="Edit" asp-controller="AwardAndCertification">\
-    <input asp-for="AwardAndCertification" hidden/>
+<form method="post" asp-action="Edit" asp-controller="AwardAndCertification">
+    
+    <input asp-for="Id" hidden/>
     <input asp-for="User_Id" hidden/>
 
     <span asp-validation-for="AwardTitle" class="text-danger"></span>

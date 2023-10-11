@@ -5,64 +5,100 @@ using Portfoliowebsite.Models;
 
 namespace Portfoliowebsite.Controllers
 {
-    public class ExperienceController : Controller
+    public class ExperienceController : BaseController<ExperienceModel>
     {
-        public readonly PortfolioDbContext _dbContext;
-
-        public ExperienceController(PortfolioDbContext dbContext)
+        public ExperienceController(PortfolioDbContext dbContext, IWebHostEnvironment webHostEnvironment) : base(dbContext, webHostEnvironment)
         {
-            _dbContext = dbContext;
         }
 
-        [HttpGet, Authorize]
-        public IActionResult Add()
+        public override async Task GetFilePath(ExperienceModel userAbout, IFormFile Profilepic)
         {
 
-            return View();
         }
-        [HttpPost, Authorize]
-        public IActionResult Add(ExperienceModel experience)
+        public override async Task PostFilePath(ExperienceModel userAbout, IFormFile? Profilepic)
         {
-            var userId = User.Claims.FirstOrDefault(x => x.Type == "Id");
-            experience.User_Id = Guid.Parse(userId.Value);
+
+        }
+        
+       
+
+        public override void date(ExperienceModel experience)
+        {
             string startData = experience.StartDate.ToString("MMMM yyyy");
             experience.startDateonly = startData;
             string endData = experience.EndDate.ToString("MMMM yyyy");
             experience.endDateonly = endData;
-
-            if (ModelState.IsValid)
-            {
-               
-                _dbContext.Experiences.Add(experience);
-                _dbContext.SaveChanges();
-                return RedirectToAction("Portfolio", "User");
-            }
-            return View(experience);
         }
-        [HttpGet, Authorize]
-        public IActionResult Edit(Guid id)
+
+        public override bool Exist(ExperienceModel model)
         {
-            var experience = _dbContext.Experiences.FirstOrDefault(x => x.ExperienceId == id);
-
-            return View(experience);
-
-        }
-        [HttpPost, Authorize]
-        public IActionResult Edit(ExperienceModel editedExperience)
-        {
-            string startData = editedExperience.StartDate.ToString("MMMM yyyy");
-            editedExperience.startDateonly = startData;
-            string endData = editedExperience.EndDate.ToString("MMMM yyyy");
-            editedExperience.endDateonly = endData;
-
-            if (ModelState.IsValid)
-            {
-                
-                _dbContext.Experiences.Update(editedExperience);
-                _dbContext.SaveChanges();
-                return RedirectToAction("Portfolio", "User");
-            }
-            return View(editedExperience);
+            return false;
         }
     }
 }
+
+
+
+
+
+//    public class Old_ExperienceController : Controller
+//    {
+//        public readonly PortfolioDbContext _dbContext;
+
+//        public Old_ExperienceController(PortfolioDbContext dbContext)
+//        {
+//            _dbContext = dbContext;
+//        }
+
+//        [HttpGet, Authorize]
+//        public IActionResult Add()
+//        {
+
+//            return View();
+//        }
+//        [HttpPost, Authorize]
+//        public IActionResult Add(ExperienceModel experience)
+//        {
+//            var userId = User.Claims.FirstOrDefault(x => x.Type == "Id");
+//            experience.User_Id = Guid.Parse(userId.Value);
+//            string startData = experience.StartDate.ToString("MMMM yyyy");
+//            experience.startDateonly = startData;
+//            string endData = experience.EndDate.ToString("MMMM yyyy");
+//            experience.endDateonly = endData;
+
+//            if (ModelState.IsValid)
+//            {
+               
+//                _dbContext.Experiences.Add(experience);
+//                _dbContext.SaveChanges();
+//                return RedirectToAction("Portfolio", "User");
+//            }
+//            return View(experience);
+//        }
+//        [HttpGet, Authorize]
+//        public IActionResult Edit(Guid id)
+//        {
+//            var experience = _dbContext.Experiences.FirstOrDefault(x => x.Id == id);
+
+//            return View(experience);
+
+//        }
+//        [HttpPost, Authorize]
+//        public IActionResult Edit(ExperienceModel editedExperience)
+//        {
+//            string startData = editedExperience.StartDate.ToString("MMMM yyyy");
+//            editedExperience.startDateonly = startData;
+//            string endData = editedExperience.EndDate.ToString("MMMM yyyy");
+//            editedExperience.endDateonly = endData;
+
+//            if (ModelState.IsValid)
+//            {
+                
+//                _dbContext.Experiences.Update(editedExperience);
+//                _dbContext.SaveChanges();
+//                return RedirectToAction("Portfolio", "User");
+//            }
+//            return View(editedExperience);
+//        }
+//    }
+//}

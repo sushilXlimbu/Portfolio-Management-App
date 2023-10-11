@@ -6,24 +6,38 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Portfoliowebsite.Migrations
 {
     /// <inheritdoc />
-    public partial class FullTablemigration : Migration
+    public partial class NewDatabaseInitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    User_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    User_Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    User_Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.User_Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "About",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Aboutid = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    User_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    ProfileName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    FName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ProfileEmail = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ProfileDescription = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ProfileDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ProfilePicture = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    User_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -40,13 +54,13 @@ namespace Portfoliowebsite.Migrations
                 name: "AwardAndCertifications",
                 columns: table => new
                 {
-                    AwardAndCertification = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    User_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    AwardTitle = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    AwardTitle = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    User_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AwardAndCertifications", x => x.AwardAndCertification);
+                    table.PrimaryKey("PK_AwardAndCertifications", x => x.Id);
                     table.ForeignKey(
                         name: "FK_AwardAndCertifications_Users_User_Id",
                         column: x => x.User_Id,
@@ -59,17 +73,19 @@ namespace Portfoliowebsite.Migrations
                 name: "Educations",
                 columns: table => new
                 {
-                    EducationId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    User_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     UniversityName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EducationField = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Gpa = table.Column<float>(type: "real", nullable: false),
                     StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    startDateonly = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    endDateonly = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    User_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Educations", x => x.EducationId);
+                    table.PrimaryKey("PK_Educations", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Educations_Users_User_Id",
                         column: x => x.User_Id,
@@ -82,17 +98,19 @@ namespace Portfoliowebsite.Migrations
                 name: "Experiences",
                 columns: table => new
                 {
-                    ExperienceId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    User_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Position = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CompanyName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     JobDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    startDateonly = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    endDateonly = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    User_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Experiences", x => x.ExperienceId);
+                    table.PrimaryKey("PK_Experiences", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Experiences_Users_User_Id",
                         column: x => x.User_Id,
@@ -124,13 +142,13 @@ namespace Portfoliowebsite.Migrations
                 name: "ProgrammingLanguages",
                 columns: table => new
                 {
-                    ProgrammingLanguageId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    User_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    User_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ProgrammingLanguages", x => x.ProgrammingLanguageId);
+                    table.PrimaryKey("PK_ProgrammingLanguages", x => x.Id);
                     table.ForeignKey(
                         name: "FK_ProgrammingLanguages_Users_User_Id",
                         column: x => x.User_Id,
@@ -143,15 +161,14 @@ namespace Portfoliowebsite.Migrations
                 name: "SocialMedia",
                 columns: table => new
                 {
-                    SocialMediaId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    User_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    SocialMediaName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    SocialMediaLink = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    SocialMediaLink = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    User_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_SocialMedia", x => x.SocialMediaId);
+                    table.PrimaryKey("PK_SocialMedia", x => x.Id);
                     table.ForeignKey(
                         name: "FK_SocialMedia_Users_User_Id",
                         column: x => x.User_Id,
@@ -187,13 +204,13 @@ namespace Portfoliowebsite.Migrations
                 name: "WorkFLows",
                 columns: table => new
                 {
-                    WorkflowId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    User_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    WorkFlowList = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    WorkFlowList = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    User_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_WorkFLows", x => x.WorkflowId);
+                    table.PrimaryKey("PK_WorkFLows", x => x.Id);
                     table.ForeignKey(
                         name: "FK_WorkFLows_Users_User_Id",
                         column: x => x.User_Id,
@@ -280,6 +297,9 @@ namespace Portfoliowebsite.Migrations
 
             migrationBuilder.DropTable(
                 name: "WorkFLows");
+
+            migrationBuilder.DropTable(
+                name: "Users");
         }
     }
 }
